@@ -41,3 +41,12 @@ for(let btn = 0; btn < btns.length; btn++){
 
   });
 }
+
+// Try to implement progrees on Numbered steps
+for(let step = 0; step < steps.length; step++){
+  steps[step].addEventListener('click', () => {
+    counter = Number(steps[step].textContent) - 1;
+    stepProgress('add');
+    barProgress('add');
+  });
+}
